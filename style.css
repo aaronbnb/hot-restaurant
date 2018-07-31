@@ -1,7 +1,11 @@
 #main-container {
-  padding: 3em;
+min-height: 500px;
   background: url('http://res.cloudinary.com/dn4jhnh54/image/upload/c_scale,w_1882/v1532991753/coffee_lxxaab.png');
   background-size: 100%;
+  background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 #main-container p, h1, button, hr {
