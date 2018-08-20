@@ -58,3 +58,16 @@ width: 300px;
 .event:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+#resources-tabs {
+  display: none;
+}
+
+#click-alert {
+  display: none;
+}
+
+p#click-alert-text {
+  margin: 0;
+  padding: 0;
+}

@@ -1,21 +1,41 @@
-
-
 $(document).ready(function() {
 
-  var database = firebase.database();
+var shouldNutritionFactsShow = true;
 
-  var salesLead = {
-    name: "",
-    email: "",
-  };
+$('#restaurant-status').on('click', function() {
 
-$('#contact-submit').on('click', function() {
 
-  salesLead.name = $('#name').val();
-  salesLead.email = $('#email').val();
+//Option 1
+  // if(shouldNutritionFactsShow === true) {
+  //   //make facts show
+  //   $('#resources-tabs').css('display', 'block');
+  //   shouldNutritionFactsShow = false;
+  // } else {
+  //     //make facts disappear
+  //     $('#resources-tabs').css('display', 'none');
+  //     shouldNutritionFactsShow = true;
+  // }
 
-  database.ref().push(salesLead);
+if($('#resources-tabs').attr('visible') === 'false') {
+  $('#resources-tabs').css('display', 'block');
+  $('#resources-tabs').attr('visible', 'true');
+} else {
+$('#resources-tabs').css('display', 'none');
+$('#resources-tabs').attr('visible', 'false');
+
+}
+
 });
+
+$('.card').on('click', function() {
+  var alertText = $(this).find('h5').text();
+  $('#click-alert-text').text("You clicked on " + alertText + ". Are you sure that's right")
+  $('#click-alert').css('display', 'flex');
+
+});
+
+
+
 
 
 });

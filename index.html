@@ -5,7 +5,7 @@
     <title>Hot Restaurant</title>
 <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -17,18 +17,27 @@
     messagingSenderId: "311486116687"
   };
   firebase.initializeApp(config);
-</script>
+</script> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/app2.js">
+    <script type="text/javascript" src="assets/javascript/app.js">
 
     </script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <div class="alert alert-primary" role="alert" id="click-alert">
+      <p id="click-alert-text"></p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+ </button>
+</div>
+
+
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav-container">
       <a id="logo" class="navbar-brand" href="#"><i class="fas fa-coffee" aria-hidden="true"></i>
 
@@ -52,7 +61,18 @@
       </div>
     </nav>
 
-    <form aria-labelledby="contact-title">
+
+    <button id="restaurant-status">Resources</button>
+    <div id="resources-tabs" visible="false">
+      <h3>Nutritional Information</h3>
+      <ul>
+        <li>Gluten Free Items</li>
+        <li>Kosher Certification</li>
+        <li>A Rating</li>
+      </ul>
+    </div>
+
+    <!-- <form aria-labelledby="contact-title">
       <h3 id="contact-title">Get in Touch!</h3>
       <label for="name">Name</label>
       <input id="name" type="text" name="" value="">
@@ -68,19 +88,31 @@
   <p>I live in LA.</p>
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   Launch modal
-  </button>
+  </button> -->
+<div class="container">
+  <div class="card" style="width: 18rem;" id="important-card">
+  <div class="card-body">
+    <h5 class="card-title">Card A</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is my first card</h6>
+  </div>
+
+
+</div><div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card B</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the second card</h6>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card 3</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Third Card</h6>
+  </div>
+</div>
 
 </div>
 
-<div class="event">
-  <p class="event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="event">
-  <p class="event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="event">
-  <p class="event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+
 
 
 
