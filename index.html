@@ -23,7 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/app.js">
+    <script type="text/javascript" src="app.js">
 
     </script>
     <link rel="stylesheet" href="style.css">
@@ -61,9 +61,29 @@
       </div>
     </nav>
 
+    <section class="contact-container">
+      <form id="contact-form">
 
+        <div class="username-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" autocomplete="off">
+        </div>
+        <div id="username-info" class="username-info-msg hidden">
+          <p>Your username must have a special character, an uppercase, and an emoji.</p>
+        </div>
 
+        <div class="confirm-box">
+          <label for="confirm-username">Confirm Username</label>
+          <input type="text" id="confirm-username">
+        </div>
 
+        <div id="password-warning" class="username-info-msg hidden">
+          <p>passwords must match</p>
+        </div>
+
+        <button type="button" name="button">Submit</button>
+      </form>
+    </section>
 
 
 
