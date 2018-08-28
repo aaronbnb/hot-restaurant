@@ -71,3 +71,25 @@ p#click-alert-text {
   margin: 0;
   padding: 0;
 }
+
+#contact-container input, label, button {
+  display: block;
+}
+
+
+.hidden {
+  height: 1px;
+  margin-top: -1px;
+  width: 1px;
+  overflow: hidden;
+  color: transparent;
+  background-color: transparent;
+}
+
+.username-info-msg {
+  transition-duration: 1s;
+}
+
+.hidden::after {
+  transition-duration: 1s;
+}
